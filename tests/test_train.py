@@ -4,4 +4,4 @@ from ultralytics import YOLO
 model = YOLO("tests/weights/yolo11n-seg.pt")  # load an official model
 
 # Train the model
-results = model.train(data="tests/datasets/emergency_lane_seg.yaml", epochs=100, imgsz=640)
+results = model.train(data="ultralytics/cfg/datasets/coco128-seg.yaml", epochs=100, imgsz=640)
